@@ -1,0 +1,63 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("الجمع");
+        System.out.println("add two number  "+   Additton(10,5));
+
+        System.out.println("الطرح");
+        System.out.println("add two number  "+   subition(10,5));
+
+        System.out.println("الضرب");
+        System.out.println("add two number  "+   multiblcation(10,5));
+
+        System.out.println("القسمة");
+        System.out.println("add two number  "+   diviision(10,5));
+
+        System.out.println("المقارنة");
+        System.out.println("ناتج المقارنة =  "+   compare(10,5));
+
+        System.out.println("المقارنة المنطقية رقم  1");
+        System.out.println("باللوجيك المقارنة (AND)  "+   compare_logic_AND(10,5));
+
+        System.out.println("المقارنة المنطقية رقم  2");
+        System.out.println("باللوجيك المقارنة (OR)  "+   compare_logic_OR(10,5));
+
+        System.out.println("النفي ");
+        System.out.println("باللوجيك المقارنة (NOT)  "+   NOT(10,5));
+    }
+//method 1
+    public static int Additton(int x, int y){
+        int s = x+y;
+        return s;}
+// method 2
+    public static int subition (int x, int y){
+        int s = x-y;
+        return s;}
+//method 3
+    public static int multiblcation (int x, int y){
+        int s = x*y;
+        return s;}
+//method 4
+    public static int diviision (int x, int y){
+        int s = x/y;
+        return s;}
+    //method 5
+    public static boolean compare (int x, int y){
+         boolean s = x>y;
+        return s;}
+    //method 6
+    public static boolean compare_logic_AND (int x, int y){
+        boolean s = x>y;  boolean r = x<y;
+        boolean h= s && r;
+        return h ;}
+    //method 7
+    public static boolean compare_logic_OR (int x, int y){
+        boolean s = x>y;   boolean r = x<y;
+        boolean h= s || r;
+        return h ;}
+
+    public static boolean NOT(int x, int y){
+        boolean s = x>y;   boolean r = x<y;
+      //  boolean h= s || r;
+        boolean h= !(s || r);
+        return h ;}
+}
